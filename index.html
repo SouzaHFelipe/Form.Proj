@@ -31,13 +31,111 @@
                          maxlength="30"
                          required />
                     </div>
-                    <input type="submit" value="enviar">
+                    <div class="box-input">
+                        <label for="price">Preco<span class="required"></span>#</label>
+                        <input 
+                         type="number" 
+                         name="price" 
+                         id="price"
+                         class="block"
+                         placeholder="Seu preco"
+                         required />
+                    </div>
+                    <div class="box-input">
+                        <label for="descricao">descreva seu carro<span class="required"></span>#</label>
+                       <textarea name="descricao" id="descricao" placeholder="descreva seu carro" class="block"></textarea>
+                    </div>
+                    <div class="box-input">
+                        <label for="Marca">Marca do fabricante <span class="required"></span>#</label>
+                        <input 
+                         type="text" 
+                         name="Marca" 
+                         id="Marca"
+                         class="block"
+                         placeholder="marca do fabricante"
+                        
+                         required />
+                    </div>
+                    <div class="box-input">
+                        <label for="km">km do carro <span class="required"></span>#</label>
+                        <input 
+                         type="number" 
+                         name="km" 
+                         id="km"
+                         class="block"
+                         placeholder="km do carro"
+                    
+                         required />
+                    </div>
+                    <div class="box-input">
+                        <label for="Data_compra">data da compra <span class="required"></span>#</label>
+                        <input 
+                         type="number" 
+                         name="Data_compra" 
+                         id="Data_compra"
+                         class="block"
+                         placeholder="data da compra"
+
+                         required />
+                    </div>
+                    <div class="box-input">
+                        <p> modelo do cambio <span class="required-field">#</span> </p>
+                        <input 
+                         type="radio" 
+                         name="cambio" 
+                         id="manual"
+                         />
+                         <label for="manual">Manual</label>
+                         <input type="radio" id="auto" name="cambio">
+                         <label for="auto">auto</label>
+                    </div>
+                    <div class="box-input">
+                        <p> opcional </p>
+                       <ul class="opcional-lista">
+                        <li>
+                            <input type="checkbox" id="airbag" name="opcional[]" value="airbag">
+                            <label for="airbag">airbag</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="air" name="opcional[]" value="air">
+                            <label for="air">air</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="camera" name="opcional[]" value="camera">
+                            <label for="camera">camera de re</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="alarme" name="opcional[]" value="alarme">
+                            <label for="alarme">alarme</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="radio" name="opcional[]" value="radio">
+                            <label for="radio">radio</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="aro" name="opcional[]" value="aro">
+                            <label for="aro">aro liga leve </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="banco" name="opcional[]" value="banco">
+                            <label for="banco">banco de couro</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="vidro" name="opcional[]" value="vidro">
+                            <label for="vidro">vidro eletrico </label>
+                         </li>
+                       </ul>
+                    </div>
+                    <div class="box-input">
+                        <p>Fotos do carro <span class="required-field">#</span></p>
+                        <input type="file" name="image" id="image" accept="image/png , image/jpg" required multiple >
+                    
+                    </div>
+                    
+                    <input type="submit" value="enviar" class="bts-submit">
                 </form>
             </div>
         </div>
-
-
-
 
     </div>
 
